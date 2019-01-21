@@ -4,7 +4,7 @@
 #include "object.h"
 #include "direction.h"
 
-//#define SHIP_NO_CLIP
+#define SHIP_NO_CLIP
 
 #define SHIP_MOVE_SCALE	0x80
 #define SHIP_DRAW_SCALE	0x08
