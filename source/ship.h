@@ -4,6 +4,9 @@
 #include "object.h"
 #include "direction.h"
 
+#define INCLUDE_SHIP0
+#define INCLUDE_SHIP1
+
 #define SHIP_NO_CLIP
 
 #define SHIP_MOVE_SCALE	0x80
@@ -63,8 +66,18 @@ struct ship
 	const signed char* const *shapes;
 };
 
+#ifdef INCLUDE_SHIP0
+extern const signed char* const ship0[];
+#endif
+
+#ifdef INCLUDE_SHIP1
 extern const signed char* const ship1[];
+#endif
+
+#ifdef INCLUDE_SHIP3
 extern const signed char* const ship3[];
+#endif
+
 extern struct object *ship_list;
 
 void init_ship(

@@ -7,7 +7,7 @@
 
 // ---------------------------------------------------------------------------
 
-const struct path path_1_1[]=
+const struct path path_0_1[]=
 {
 	{	50,		SHIP_TOP_ROTATION_START_FRAME+20		},
 
@@ -44,7 +44,7 @@ const struct path path_1_1[]=
 	{	255,		SHIP_HOLD_FRAME						} /* endmarker */
 };
 
-const struct path path_1_2[]=
+const struct path path_0_2[]=
 {
 	{	50,		SHIP_TOP_ROTATION_START_FRAME+20		},
 	{	3,		SHIP_PREV_FRAME						},
@@ -77,7 +77,7 @@ const struct path path_1_2[]=
 	{	255,		SHIP_HOLD_FRAME						} /* endmarker */
 };
 
-const struct path path_1_3[]=
+const struct path path_0_3[]=
 {
 	{	50,		SHIP_TOP_ROTATION_START_FRAME+20		},
 
@@ -110,7 +110,7 @@ const struct path path_1_3[]=
 	{	255,		SHIP_HOLD_FRAME						} /* endmarker */
 };
 
-const struct path path_2_1[]=
+const struct path path_1_1[]=
 {
 	{	50,		SHIP_TOP_ROTATION_START_FRAME+8			},
 
@@ -147,7 +147,7 @@ const struct path path_2_1[]=
 	{	255,		SHIP_HOLD_FRAME						} /* endmarker */
 };
 
-const struct path path_2_2[]=
+const struct path path_1_2[]=
 {
 	{	50,		SHIP_TOP_ROTATION_START_FRAME+8			},
 	{	3,		SHIP_PREV_FRAME						},
@@ -180,7 +180,7 @@ const struct path path_2_2[]=
 	{	255,		SHIP_HOLD_FRAME						} /* endmarker */
 };
 
-const struct path path_2_3[]=
+const struct path path_1_3[]=
 {
 	{	50,		SHIP_TOP_ROTATION_START_FRAME+8			},
 
@@ -213,36 +213,36 @@ const struct path path_2_3[]=
 	{	255,		SHIP_HOLD_FRAME						} /* endmarker */
 };
 
-const struct wave_element wave_1[]=
+const struct wave_element wave_0[]=
 {
-	{	-120,	80,		path_1_1,		ship1	},
-	{	-120,	100,		path_1_2,		ship1	},
-	{	-120,	120,		path_1_3,		ship1	},
+	{	-120,	80,		path_0_1,		ship0	},
+	{	-120,	100,		path_0_2,		ship0	},
+	{	-120,	120,		path_0_3,		ship0	},
 
-	{	120,		-80,		path_2_1,		ship1	},
-	{	120,		-100,	path_2_2,		ship1	},
-	{	120,		-120,	path_2_3,		ship1	},
+	{	120,		-80,		path_1_1,		ship0	},
+	{	120,		-100,	path_1_2,		ship0	},
+	{	120,		-120,	path_1_3,		ship0	},
 
 	{	0,		0,		0,			0		}	/* endmarker */
 };
 
-const struct wave_element wave_2[]=
+const struct wave_element wave_1[]=
 {
-	{	-120,	80,		path_1_1,		ship3	},
-	{	-120,	100,		path_1_2,		ship3	},
-	{	-120,	120,		path_1_3,		ship3	},
+	{	-120,	80,		path_0_1,		ship1	},
+	{	-120,	100,		path_0_2,		ship1	},
+	{	-120,	120,		path_0_3,		ship1	},
 
-	{	120,		-80,		path_2_1,		ship3	},
-	{	120,		-100,	path_2_2,		ship3	},
-	{	120,		-120,	path_2_3,		ship3	},
+	{	120,		-80,		path_1_1,		ship1	},
+	{	120,		-100,	path_1_2,		ship1	},
+	{	120,		-120,	path_1_3,		ship1	},
 
 	{	0,		0,		0,			0		}	/* endmarker */
 };
 
 const struct wave_element* const waves[]=
 {
+	wave_0,
 	wave_1,
-	wave_2,
 	0			/* endmarker */
 };
 
