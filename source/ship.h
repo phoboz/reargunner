@@ -74,6 +74,10 @@ extern const signed char* const ship0[];
 extern const signed char* const ship1[];
 #endif
 
+#ifdef INCLUDE_SHIP2
+extern const signed char* const ship2[];
+#endif
+
 #ifdef INCLUDE_SHIP3
 extern const signed char* const ship3[];
 #endif
